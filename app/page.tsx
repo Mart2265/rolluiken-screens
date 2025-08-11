@@ -164,11 +164,11 @@ export default function Page() {
                 </div>
                 <div>
                   <label className="text-sm">Breedte (cm)</label>
-                  <input className="w-full mt-1 rounded-xl border px-3 py-2" type="number" min={40} value={widthCm} onChange={(e)=>setWidthCm((e.target as HTMLInputElement).value)} />
+                  <input className="w-full mt-1 rounded-xl border px-3 py-2" type="number" min={40} value={widthCm} onChange={(e)=>setWidthCm(e.currentTarget.valueAsNumber || 0)} />
                 </div>
                 <div>
                   <label className="text-sm">Hoogte (cm)</label>
-                  <input className="w-full mt-1 rounded-xl border px-3 py-2" type="number" min={40} value={heightCm} onChange={(e)=>setHeightCm((e.target as HTMLInputElement).value)} />
+                  <input className="w-full mt-1 rounded-xl border px-3 py-2" type="number" min={40} value={heightCm} onChange={(e)=>setHeightCm(e.currentTarget.valueAsNumber || 0)} />
                 </div>
                 <div>
                   <label className="text-sm">Montage</label>
