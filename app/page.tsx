@@ -1,6 +1,13 @@
 'use client';
 import Image from 'next/image'
-import { useState, useMemo } from 'react'
+
+<Image
+  src="https://images.unsplash.com/photo-1600585154340-1e4ce9a1400b?q=80&w=1400&auto=format&fit=crop"
+  alt="Modern interieur"
+  width={1400}
+  height={600}
+  className="rounded-2xl h-60 w-full object-cover"
+/>
 
 const BASE = { rolluik: 175, screen: 149 } as const
 const OPT = {
